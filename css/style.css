@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+body {
+    font-family: "Montserrat", sans-serif;
+    text-align: center;
+}
+
+#basico div {
+    display: flex;
+    justify-content: center;
+}
+
+#basico div div{
+    width: 150px;
+    height: 150px;
+    overflow: hidden;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+#basico div div img {
+    min-width: 100%;
+    object-fit: cover;
+}
+
+#contenedorGrilla {
+    display: flex;
+    justify-content: center;
+}
+
+#avanzado {
+    display: grid;
+    grid-template-areas: 
+            "ola ola beso grito"
+            "cuadrados dahli dahli grito"
+            ;
+    grid-template-rows: 300px 300px;
+    grid-template-columns: 380px 100px 380px 400px;
+    grid-gap: 10px;
+    min-height: 0; 
+    min-width: 0;
+}
+
+#ola {
+    grid-area: ola;
+}
+
+#beso {
+    grid-area: beso;
+}
+
+#grito {
+    grid-area: grito;
+}
+
+#cuadrados {
+    grid-area: cuadrados;
+
+}
+
+#dahli {
+    grid-area: dahli;
+
+}
+
+#ola, #beso, #grito, #cuadrados, #dahli {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+footer {
+    margin-top: 50px;
+}
